@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="blogApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular 2 Frontcamp-3</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/blog/blog.module.js"></script>
+    <script src="core/blog/blog.service.js"></script>
+    <script src="blog-list/blog-list.module.js"></script>
+    <script src="blog-list/blog-list.component.js"></script>
+    <script src="blog-form/blog-form.module.js"></script>
+    <script src="blog-form/blog-form.component.js"></script>
+  </head>
+  <body>
+
+    <div ng-view></div>
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <p>
+        Total blogs: {{$ctrl.blogsCount}}
+      </p>
+
+      <button type="button" class="btn bg-primary" ng-click="$ctrl.addBlog()">Add Blog</button>
+
+    </div>
+    <div class="col-md-5">
+      <!--Body content-->
+
+      <p>Blogs:</p>
+
+      <ul class="blogs">
+        <li ng-repeat="blog in $ctrl.blogs" class="thumbnail">
+          <a href="#!/blogs/{{blog.id}}" class="thumb">
+            <img ng-src="img/blog.png" alt="{{blog.title}}" />
+          </a>
+          <a href="#!/blogs/{{blog.id}}">{{blog.title}}</a>&nbsp;<span>({{blog.author}})</span>
+          <p>{{blog.content}}</p>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-5 col-md-offset-2">
+      <ul uib-pagination total-items="$ctrl.blogsCount" items-per-page="$ctrl.blogsPerPage" ng-model="$ctrl.currentPage" ng-change="$ctrl.pageChanged()"></ul>
+    </div>
+  </div>
+</div>

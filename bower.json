@@ -1,0 +1,13 @@
+{
+  "name": "frontcamp-angular-2",
+  "description": "Simple blog application with pagination",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.6.x",
+    "angular-resource": "1.6.x",
+    "angular-route": "1.6.x",
+    "bootstrap": "3.3.x",
+    "angular-bootstrap": "2.5.x"
+  }
+}

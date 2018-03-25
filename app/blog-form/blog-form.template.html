@@ -1,0 +1,14 @@
+<div>
+    <form class="simple-form" name="blogForm">
+        <label>Author: <input type="text" name="author" ng-model="$ctrl.blog.author" required/></label>
+        <span style="color: red" ng-show="blogForm.author.$touched && blogForm.author.$invalid">Author is required</span><br/>
+
+        <label>Title: <input type="text" name="title" ng-model="$ctrl.blog.title" required/></label>
+        <span style="color: red" ng-show="blogForm.title.$touched && blogForm.title.$invalid">Title is required</span><br/>
+
+        <label>Content: <textarea class="form-control" name="content" ng-minlength="20" rows="5" cols="60" ng-model="$ctrl.blog.content" required></textarea></label>
+        <span style="color: red" ng-show="blogForm.content.$touched && blogForm.content.$invalid">Content is required and min length is 20</span><br/>
+
+        <button type="submit" class="btn btn-primary" ng-disabled="blogForm.$invalid" ng-click="$ctrl.saveBlog($ctrl.blog)">Save</button>
+    </form>
+</div>

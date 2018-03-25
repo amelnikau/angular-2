@@ -1,0 +1,27 @@
+body {
+  padding: 20px;
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+
+/* View: Phone list */
+.blogs {
+  list-style: none;
+  padding: 0px;
+}
+
+.blogs li {
+  clear: both;
+  height: 180px;
+  padding-top: 15px;
+}
+
+.thumb {
+  float: left;
+  height: 180px;
+  margin: -0.5em 1em 1.5em 0;
+  padding-bottom: 1em;
+  width: 100px;
+}

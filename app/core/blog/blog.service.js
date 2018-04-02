@@ -63,6 +63,7 @@ angular.module('core.blog').factory('Blog',
         this.currentPage = 1;
         return {
             getBlogs: function (pageNum = 1) {
+                self.currentPage = pageNum;
                 return {
                     'blogs': getPagedBlogs(self.blogs, pageNum),
                     'blogsCount': self.blogsCount,
